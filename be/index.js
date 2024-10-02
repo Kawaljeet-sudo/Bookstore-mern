@@ -24,7 +24,7 @@ mongoose.connect(mongoDBURL).then(() => {
     app.listen(PORT,() => {
         console.log("app is listening to port 8080")
     })
-}).catch(() => {
+}).catch((error) => {
     console.log(error);
 })
 
